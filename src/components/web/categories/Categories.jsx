@@ -36,7 +36,8 @@ export default function Categories() {
       autoplay={{
         delay:3000
       }} 
-    
+      onSlideChange={() => ('slide change')}
+      onSwiper={(swiper) => (swiper)}
     >
       {data?.categories.length ? data?.categories.map( (category)=>
       <SwiperSlide key={category._id}>
