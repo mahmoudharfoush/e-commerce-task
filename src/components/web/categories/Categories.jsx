@@ -18,7 +18,7 @@ export default function Categories() {
   }
 
   const x = useContext(CartContext);
-  console.log(x);
+ 
 
   const {data,isLoading} = useQuery('web_categories',getCategories);
   if(isLoading){
@@ -36,8 +36,7 @@ export default function Categories() {
       autoplay={{
         delay:3000
       }} 
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+    
     >
       {data?.categories.length ? data?.categories.map( (category)=>
       <SwiperSlide key={category._id}>

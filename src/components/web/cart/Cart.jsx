@@ -17,7 +17,7 @@ export default function Cart() {
   }
 
  const {data,isLoading} = useQuery("cart", getCart);
- console.log(data); 
+
 
  if(isLoading){
   return <p>loading ...</p>
