@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
-import { CartContext } from '../context/Cart';
+import { CartContext } from '../context/Cart.jsx';
 
 
 export default function Categories() {

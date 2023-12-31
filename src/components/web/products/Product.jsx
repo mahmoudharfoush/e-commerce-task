@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom'
 import ReactImageMagnify from 'react-image-magnify';
-import { CartContext } from '../context/Cart';
+import { CartContext } from '../context/Cart.jsx';
 
 function Product() {
 const {productId} =useParams();

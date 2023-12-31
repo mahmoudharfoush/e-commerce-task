@@ -1,7 +1,7 @@
 import React from 'react'
 import Input from '../../pages/Input.jsx';
 import { useFormik } from 'formik';
-import {ForgotPasswordSchema, registerSchema} from '../validation/Validate.js'
+import {ForgotPasswordSchema} from '../validation/Validate.js'
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
